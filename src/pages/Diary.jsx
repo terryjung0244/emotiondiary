@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+
 
 const Diary = () => {
+
+
+
   return (
     <div>
       <h1>Diary</h1>
