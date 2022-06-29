@@ -6,6 +6,7 @@ import Diary from './pages/Diary';
 import Edit from './pages/Edit';
 import New from './pages/New';
 import MyButton from './components/MyButton';
+import MyHeader from './components/MyHeader';
 
 
 
@@ -13,6 +14,11 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='App'>
+        <MyHeader 
+          headText={'App'} 
+          leftChild={<MyButton text={'Left Button'} onClick={() => alert('Hello')}/>}
+          rightChild={<MyButton text={'Right Button'} onClick={() => alert('Hello')}/>}
+          />
         <h2>App</h2>
         <MyButton
           text='Button'
